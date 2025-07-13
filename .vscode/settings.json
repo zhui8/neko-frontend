@@ -10,5 +10,8 @@
 	"editor.formatOnSave": true,
 	"editor.tabSize": 2,
 	"editor.insertSpaces": false,
-	"typescript.tsdk": "node_modules/typescript/lib"
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"javascript.testExplorer.enabled": true,
+	"typescript.testExplorer.enabled": true,
+	"cSpell.words": ["danmaku"]
 }
