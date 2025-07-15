@@ -1,5 +1,5 @@
 import { useWallet } from "@solana/wallet-adapter-react";
-import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
+import { useWalletModal, WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import { LogOut } from "react-feather";
 import { Link } from "react-router";
 import logo from "../assets/logo.png";
@@ -9,11 +9,16 @@ import { useEffect, useState } from "react";
 
 export function Topbar() {
   const { publicKey, disconnect } = useWallet();
+  // const {  } = useConnection()
   const [isMobile, setIsMobile] = useState(false);
+  const { setVisible: setModalVisible } = useWalletModal();
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
+      if (isMobile) {
+        setModalVisible(true);
+      }
     };
     
     handleResize();
