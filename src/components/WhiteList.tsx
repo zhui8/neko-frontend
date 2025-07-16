@@ -22,7 +22,7 @@ export function GetWhiteList() {
 
   return (
     <div className="w-4/5 lg:w-3/5 flex flex-col items-center text-white">
-      <p className="text-4xl lg:text-4xl font-bold my-12">Get Whitelisted</p>
+      <p className="text-3xl lg:text-4xl font-bold mt-12 mb-4">Get Whitelisted</p>
 
       {isMobile ? <Mobile /> : <Pc />}
     </div>

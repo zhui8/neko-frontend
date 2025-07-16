@@ -6,7 +6,7 @@ export function About() {
       <h1 className="text-4xl font-bold mb-2 lg:hidden">About $NEKO</h1>
       <img className="w-[200px]" src={aboutCat} />
 
-      <div className="w-[400px] flex flex-col items-start ml-8">
+      <div className="w-4/5 flex flex-col items-start ml-8">
         <h1 className="text-2xl font-bold mb-2 hidden lg:block">About $NEKO</h1>
         <p className="my-2">
           $NEKO is not just a meme coin — it’s your blockchain lucky
