@@ -4,6 +4,7 @@ import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 import { UnsafeBurnerWalletAdapter } from "@solana/wallet-adapter-wallets";
 import { clusterApiUrl } from "@solana/web3.js";
 import { LoadingOrError } from "components/LoadingOrError";
+import { Footer } from "layout/Footer";
 import { Topbar } from "layout/Topbar";
 import { Home } from "pages/Home";
 import { Suspense, useMemo } from "react";
@@ -46,12 +47,13 @@ export function App() {
         <WalletModalProvider>
           <ErrorBoundary fallbackRender={renderError}>
             <Suspense fallback={<LoadingOrError />}>
-							<Topbar />
+							{/* <Topbar /> */}
               <Routes>
                 <Route element={<Home />} index={true} />
                 {/* <Route element={<Details />} path=":fruitName" /> */}
                 {/* <Route element={<Wallet/>} path=':fruitName' /> */}
               </Routes>
+              <Footer />
             </Suspense>
           </ErrorBoundary>
         </WalletModalProvider>

@@ -59,6 +59,9 @@ importers:
       react-error-boundary:
         specifier: 6.0.0
         version: 6.0.0(react@19.1.0)
+      react-fast-marquee:
+        specifier: ^1.6.5
+        version: 1.6.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react-feather:
         specifier: ^2.0.10
         version: 2.0.10(react@19.1.0)
@@ -4550,6 +4553,12 @@ packages:
     resolution: {integrity: sha512-gdlJjD7NWr0IfkPlaREN2d9uUZUlksrfOx7SX62VRerwXbMY6ftGCIZua1VG1aXFNOimhISsTq+Owp725b9SiA==}
     peerDependencies:
       react: '>=16.13.1'
+
+  react-fast-marquee@1.6.5:
+    resolution: {integrity: sha512-swDnPqrT2XISAih0o74zQVE2wQJFMvkx+9VZXYYNSLb/CUcAzU9pNj637Ar2+hyRw6b4tP6xh4GQZip2ZCpQpg==, tarball: https://registry.npmjs.org/react-fast-marquee/-/react-fast-marquee-1.6.5.tgz}
+    peerDependencies:
+      react: '>= 16.8.0 || ^18.0.0'
+      react-dom: '>= 16.8.0 || ^18.0.0'
 
   react-feather@2.0.10:
     resolution: {integrity: sha512-BLhukwJ+Z92Nmdcs+EMw6dy1Z/VLiJTzEQACDUEnWMClhYnFykJCGWQx+NmwP/qQHGX/5CzQ+TGi8ofg2+HzVQ==, tarball: https://registry.npmjs.org/react-feather/-/react-feather-2.0.10.tgz}
@@ -11649,6 +11658,11 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.27.4
       react: 19.1.0
+
+  react-fast-marquee@1.6.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+    dependencies:
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
 
   react-feather@2.0.10(react@19.1.0):
     dependencies:
